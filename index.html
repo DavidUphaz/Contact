@@ -3,12 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <title>לומדים מתמטיקה</title>
     <link rel="icon" type="image/png" href="pi.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         /* Custom font for a clean look */
         body {
+            font-family: 'Roboto', sans-serif; /* Fallback to a generic sans-serif if Roboto isn't loaded */
+            line-height: 1.6; /* Good practice for readability */
             background-color: #f0f4f8; /* Light background color */
             min-height: 100vh; /* Ensure body takes full viewport height for consistent centering */
             display: flex;
