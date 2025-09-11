@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>לומדים מתמטיקה</title>
+    <link rel="icon" type="image/png" href="pi.png">
+    <style>
+        /* Base styles from Tailwind */
+        :root {
+            --color-blue-100: #dbeafe;
+            --color-blue-500: #3b82f6;
+            --color-blue-600: #2563eb;
+            --color-blue-700: #1d4ed8;
+            --color-green-500: #22c55e;
+            --color-green-600: #16a34a;
+            --color-gray-700: #4b5563;
+            --color-gray-900: #111827;
+            --color-white: #ffffff;
+            --color-f0f4f8: #f0f4f8;
+        }
+
+        body {
+            font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            background-color: var(--color-f0f4f8);
+            padding: 1rem;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Container styles */
+        .container {
+            background-color: var(--color-white);
+            padding: 2rem;
+            border-radius: 0.75rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            max-width: 42rem;
+            width: 100%;
+        }
+
+        /* Title styles */
+        .title {
+            font-size: 1.5rem;
+            line-height: 2rem;
+            font-weight: 700;
+            color: var(--color-gray-900);
+            text-align: center;
+            margin-bottom: 1.5rem;
+            border-radius: 0.375rem;
+            padding: 0.5rem;
+            background-color: var(--color-blue-100);
+        }
+
+        /* Paragraph styles */
+        .paragraph {
+            font-size: 1.125rem;
+            line-height: 1.75rem;
+            color: var(--color-gray-700);
+            text-align: right;
+            margin-bottom: 2rem;
+        }
+
+        /* Image styles */
+        .image-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+
+        .profile-image {
+            height: auto;
+            transform: scale(1);
+            transition: transform 0.3s ease-in-out;
+            margin-left: auto;
+            margin-right: auto;
+            width: 66.666667%;
+        }
+
+        .profile-image:hover {
+            transform: scale(1.05);
+        }
+
+        /* Button group styles */
+        .button-group {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .button-group:last-of-type {
+            margin-bottom: 0;
+        }
+
+        /* WhatsApp button styles */
+        .whatsapp-button {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.75rem 1.5rem;
+            background-color: var(--color-green-500);
+            color: var(--color-white);
+            font-weight: 600;
+            border-radius: 9999px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: background-color 0.3s ease-in-out;
+            text-decoration: none;
+        }
+
+        .whatsapp-button:hover {
+            background-color: var(--color-green-600);
+        }
+
+        /* Phone call button styles */
+        .phone-button {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.75rem 1.5rem;
+            background-color: var(--color-blue-600);
+            color: var(--color-white);
+            font-weight: 600;
+            border-radius: 9999px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: background-color 0.3s ease-in-out;
+            text-decoration: none;
+        }
+
+        .phone-button:hover {
+            background-color: var(--color-blue-700);
+        }
+
+        /* SVG icon styles */
+        .icon {
+            width: 1.25rem;
+            height: 1.25rem;
+            margin-right: 0.5rem;
+            fill: currentColor;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">
+            תגבור במתמטיקה לכיתות ז'-י"ב 3,4,5 יח"ל
+        </h1>
+        <p dir="rtl" class="paragraph">
+            שמי דוד, בוגר אונ' ת"א במתמטיקה ומדעי המחשב. עם ניסיון רב בתוכנה ובהוראת מתמטיקה. והמון סבלנות!
+        </p>
+        <div class="image-container">
+            <img src="Me.jpg"
+                alt="Placeholder centered image"
+                class="profile-image">
+        </div>
+        <div class="button-group">
+            <a href="https://wa.me/972525736072"
+                target="_blank"
+                class="whatsapp-button">
+                <svg class="icon" viewBox="0 0 24 24">
+                    <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.72.45 3.38 1.32 4.85L2 22l5.25-1.38c1.47.87 3.13 1.32 4.85 1.32 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm5.37 14.57c-.2-.1-.73-.36-.84-.4c-.11-.04-.2-.06-.29.06-.09.11-.34.4-.42.48-.07.09-.15.1-.28.06-.12-.04-.5-.19-.95-.59-.35-.3-.59-.5-.78-.81-.2-.3-.02-.28.14-.44.15-.15.29-.36.39-.54.1-.18.05-.33-.02-.47-.07-.14-.29-.7-.4-.96-.11-.25-.2-.21-.28-.22-.09-.01-.19-.01-.29-.01-.11 0-.28.04-.42.19-.14.15-.54.53-.66.64-.12.11-.24.15-.45.09-.2-.06-.84-.31-1.6-.98-.59-.51-.98-.9-1.1-.15-.11.75.45 1.46.59 1.66.14.2.28.29.47.37.19.09.38.16.59.22.19.06.38.04.54.02.16-.02.48-.2.52-.39.04-.19.04-.37.02-.4-.02-.02-.2-.1-.5-.24z"/>
+                </svg>
+                כתבו לי ב-וואצאפ
+            </a>
+        </div>
+        <div class="button-group">
+            <a href="tel:+972525736072"
+                class="phone-button">
+                <svg class="icon" viewBox="0 0 24 24">
+                    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.46.57 3.57.11.35.03.74-.24 1.02l-2.2 2.2z"/>
+                </svg>
+                דברו איתי
+            </a>
+        </div>
+    </div>
+</body>
+</html>
